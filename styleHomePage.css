@@ -1,0 +1,116 @@
+body{
+  background-color: #282A3A;
+  margin: 0;
+  padding: 0;
+  height: 800px;
+  }
+
+h1{
+  margin: 0;
+  padding: 1rem;
+  background: linear-gradient(150deg, #0d332e, #2499bd, #f7f0ef);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  font-size: 50px;
+  color: aliceblue;
+  text-align: center;
+  justify-content: center;
+}
+.navbar{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 15px;
+  padding-block: 15px;
+}
+.navbar a{
+  text-decoration: none;
+  color:  aliceblue;
+}
+.logo{
+  color:  aliceblue; 
+}
+
+.list{
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+li{
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  margin: 0.5em;
+  padding: 10px 15px; 
+  color:  #DDE6ED;
+  border-radius: 20px;
+}
+.list li:hover {
+  background-color: #526D8290;
+  box-shadow: 3px 5px 5px;
+}
+#toggler,
+.navbar label {
+  display: none;
+}
+
+
+@media screen and (max-width: 600px)
+{
+  
+  h1{
+    font-size: 30px;
+    letter-spacing: 1.5px;
+  }
+  .menu{
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+  }
+  .list{
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .navbar label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  #toggler:checked~.menu {
+    max-height: 100%;
+  }
+}
+
+.wellcome{
+  height: 700px;
+}
+
+.container{
+  height: 350px;
+  width: 350px;
+  background-color: #ffffff05;
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(25px);
+  border-radius: 50%;
+  color: aliceblue;
+}
+.back{
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  z-index: -1;
+  aspect-ratio: 3/1;
+}
+.background {
+  background: whitesmoke;
+  background-size: 180% 180%;
+}
