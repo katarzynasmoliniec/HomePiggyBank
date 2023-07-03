@@ -15,6 +15,7 @@ h1{
   text-align: center;
   justify-content: center;
 }
+
 .navbar{
   display: flex;
   flex-wrap: wrap;
@@ -23,10 +24,12 @@ h1{
   margin-left: 15px;
   padding-block: 15px;
 }
+
 .navbar a{
   text-decoration: none;
   color:  aliceblue;
 }
+
 .logo{
   color:  aliceblue; 
 }
@@ -48,18 +51,28 @@ li{
   color:  #DDE6ED;
   border-radius: 20px;
 }
+
 .list li:hover {
   background-color: #526D8290;
   box-shadow: 3px 5px 5px;
 }
+
 #toggler,
 .navbar label {
   display: none;
 }
+
 .background {
   background: whitesmoke;
   background-size: 180% 180%;
 }
+
 .income{
   border-radius: 10px;
 }
+
+.balance{
+  width: 150vh;
+  height: 470px;
+}
+
